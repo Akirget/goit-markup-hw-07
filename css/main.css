@@ -143,11 +143,12 @@ address {
 /* Кнопка */
 .button {
   min-width: 200px;
-  padding: 10px 32px;
+  height: 50px;
   border-radius: 4px;
   border: 1px solid transparent;
   color: var(--white-color);
   background-color: var(--accent-color);
+  border-color: transparent;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -158,6 +159,8 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition: color var(--anim-slow), background-color var(--anim-slow);
   transition: color var(--anim-slow), background-color var(--anim-slow);
 }
@@ -172,20 +175,7 @@ address {
 
 .hero__button {
   display: inline-block;
-}
-
-.footer__subscribe-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-  margin-left: 12px;
+  padding: 10px 32px;
 }
 
 /* Социальные сети */
@@ -978,6 +968,18 @@ address {
 }
 .footer__subscribe-input:focus {
   outline: transparent;
+}
+
+.footer__subscribe-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  margin-left: 12px;
 }
 
 /* Секция портфолио */
