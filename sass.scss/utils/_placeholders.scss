@@ -1,0 +1,22 @@
+/* Убираем точки */
+%list {
+    list-style: none;
+}
+
+/* Убираем подчеркивания */
+%link {
+    text-decoration: none;
+}
+
+%section {
+    padding: 94px 0;
+}
+
+%container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 3px solid red; */
+}
