@@ -233,9 +233,7 @@ address {
   -webkit-transition: fill var(--anim-slow), background-color var(--anim-slow);
   transition: fill var(--anim-slow), background-color var(--anim-slow);
 }
-
-.socials__link:hover,
-.socials__link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
@@ -281,7 +279,6 @@ address {
           flex-direction: column;
   gap: 4px;
 }
-
 .register__wrap:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -302,9 +299,11 @@ address {
   -webkit-transition: border-color var(--anim-slow);
   transition: border-color var(--anim-slow);
 }
-
 .register__field:focus {
   border-color: var(--accent-color);
+}
+.register__field:focus + .register__icon {
+  fill: var(--accent-color);
 }
 
 .register__icon {
@@ -312,10 +311,6 @@ address {
   bottom: 11px;
   left: 12px;
   fill: var(--title-text-color);
-}
-
-.register__field:focus + .register__icon {
-  fill: var(--accent-color);
 }
 
 .register__message {
@@ -332,27 +327,21 @@ address {
   -webkit-transition: border-color var(--anim-slow);
   transition: border-color var(--anim-slow);
 }
-
 .register__message:focus {
   border-color: var(--accent-color);
 }
-
 .register__message::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .register__message::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .register__message:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .register__message::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .register__message::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }

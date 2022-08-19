@@ -33,12 +33,12 @@
     border-radius: 50%;
 
     transition: fill var(--anim-slow), background-color var(--anim-slow);
-}
 
-.socials__link:hover,
-.socials__link:focus {
-    background-color: var(--accent-color);
-    fill: var(--white-color);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--white-color);
+        }
 }
 
 .socials__link--team {

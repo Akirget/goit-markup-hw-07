@@ -24,11 +24,12 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+        }
 }
 
-.register__wrap:not(:last-child) {
-    margin-bottom: 10px;
-}
 
 .register__label {
     font-size: 12px;
@@ -46,21 +47,22 @@
     outline: transparent;
 
     transition: border-color var(--anim-slow);
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+
+        &:focus+.register__icon {
+        fill: var(--accent-color);
+        }
 }
 
-.register__field:focus {
-    border-color: var(--accent-color);
-}
 
 .register__icon {
     position: absolute;
     bottom: 11px;
     left: 12px;
     fill: var(--title-text-color);
-}
-
-.register__field:focus+.register__icon {
-    fill: var(--accent-color);
 }
 
 .register__message {
@@ -78,15 +80,16 @@
     resize: none;
 
     transition: border-color var(--anim-slow);
+
+    &:focus {
+            border-color: var(--accent-color);
+        }
+    
+        &::placeholder {
+            color: rgba(117, 117, 117, 0.5);
+        }
 }
 
-.register__message:focus {
-    border-color: var(--accent-color);
-}
-
-.register__message::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-}
 
 .register__agreement {
     display: flex;
