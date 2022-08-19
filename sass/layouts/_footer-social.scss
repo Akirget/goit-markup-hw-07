@@ -9,12 +9,13 @@
     letter-spacing: 0.03em;
 
     transition: color var(--anim-slow);
-}
-
-.footer__mail:hover,
-.footer__mail:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-color);
 }
+}
+
+
 
 .footer__social {
     
