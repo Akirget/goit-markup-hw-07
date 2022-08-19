@@ -54,15 +54,6 @@
   padding: 94px 0;
 }
 
-.portfolio__container, .footer__container, .client__container, .team__container, .work__container, .features__container, .hero__container, .header__container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* outline: 3px solid red; */
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -118,6 +109,28 @@ img {
 /* Свойства для обнуления курсива у address */
 address {
   font-style: normal;
+}
+
+.portfolio__container, .footer__container, .client__container, .team__container, .work__container, .features__container, .hero__container, .header__container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio__container, .footer__container, .client__container, .team__container, .work__container, .features__container, .hero__container, .header__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__container, .footer__container, .client__container, .team__container, .work__container, .features__container, .hero__container, .header__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__container, .footer__container, .client__container, .team__container, .work__container, .features__container, .hero__container, .header__container {
+    width: 1200px;
+  }
 }
 
 /* Логотип компании */
@@ -514,9 +527,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -568,15 +579,13 @@ address {
   -webkit-transition: color var(--anim-slow);
   transition: color var(--anim-slow);
 }
+.contact__link:hover, .contact__link:focus {
+  color: var(--accent-color);
+}
 
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.contact__link:hover,
-.contact__link:focus {
-  color: var(--accent-color);
 }
 
 /* Главный герой */
@@ -864,9 +873,7 @@ address {
   -webkit-transition: color var(--anim-slow);
   transition: color var(--anim-slow);
 }
-
-.footer__mail:hover,
-.footer__mail:focus {
+.footer__mail:hover, .footer__mail:focus {
   color: var(--accent-color);
 }
 
@@ -1048,15 +1055,22 @@ address {
   margin-bottom: 30px;
   cursor: pointer;
 }
-
 .portfolio__works-item:nth-child(3n) {
   margin-right: 0;
 }
-
 .portfolio__works-item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
-
+.portfolio__works-item:hover .works__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.portfolio__works-item:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio__works-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
 .portfolio__works-item:hover .works__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1071,9 +1085,7 @@ address {
   transition: border var(--anim-slow), box-shadow var(--anim-slow);
   transition: border var(--anim-slow), box-shadow var(--anim-slow), -webkit-box-shadow var(--anim-slow);
 }
-
-.portfolio__works-link:hover,
-.portfolio__works-link:focus {
+.portfolio__works-link:hover, .portfolio__works-link:focus {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);

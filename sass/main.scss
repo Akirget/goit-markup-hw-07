@@ -2,9 +2,11 @@
 @import "./utils/variables";
 @import "./utils/vasuslly-hidden";
 @import "./utils/placeholders";
+@import "./utils/mixin";
 
 // Base styles
 @import "./base/reset";
+@import "./base/container";
 
 // Components styles
 @import "./components/logo";

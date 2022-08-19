@@ -30,6 +30,12 @@
     position: relative;
 
     transition: color var(--anim-slow);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        }
+
 }
 
 .contact__icon {
@@ -37,7 +43,3 @@
     fill: currentColor;
 }
 
-.contact__link:hover,
-.contact__link:focus {
-    color: var(--accent-color);
-}
