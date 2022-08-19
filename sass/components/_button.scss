@@ -22,14 +22,17 @@
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 
     transition: color var(--anim-slow), background-color var(--anim-slow);
+
+    &:hover,
+    &:hover {
+        color: var(--white-color);
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+
 }
 
-.button:hover,
-.button:hover {
-    color: var(--white-color);
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-}
+
 
 .hero__button {
     display: inline-block;
